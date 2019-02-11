@@ -44,8 +44,8 @@
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
   visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s
+  -webkit-animation: fadeIn 2s;
+  animation: fadeIn 2s
 }
 
 /* Add animation (fade in the popup) */
@@ -55,8 +55,12 @@
 }
 
 @keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 </style>
 </head>
