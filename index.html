@@ -2,50 +2,57 @@
 <head>
   <style>
   .popup {
-  position: absolute;
+  position: fixed;
   left: 200px;
-  top: 575px;
-  height: 500px;
+  top: 775px;
+  height: 300px;
+  width: 450px;
   display: inline-block;
   cursor: pointer;
   border-width: 6px;
   border-color: #000;
 }
 
+.textbox{
+  width: 450px;
+  height: 300px;
+  overflow: scroll;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+
+
+}
+
 /* The actual popup (appears on top) */
 .popup .popuptext {
   visibility: hidden;
-  width: 450px;
+  width: 455px;
   background-color: white;
   color: #000;
   text-align: center;
   border-radius: 6px;
   border-color: #000;
-  padding: 8px 0;
+  padding: 0px;
   position: absolute;
   z-index: 1;
   bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-/* Popup arrow */
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: black;
 }
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
   visibility: visible;
   -webkit-animation: fadeIn 2s;
-  animation: fadeIn 2s
+  animation: fadeIn 2s;
+}
+
+#x {
+    position: absolute;
+    float: right;
+    background: red;
+  color: white;
+    top: 0px;
+    right: -10px;
 }
 
 /* Add animation (fade in the popup) */
@@ -69,19 +76,67 @@
 <div align="center">
 <img src="pictures/wholeImage.jpg" alt="wholeImage" height="100%" usemap="#imagemap">
 </div>
-<div class="popup" onclick="myFunction()">
-  <span class="popuptext" id="myPopup"><img src="pictures/topLeft.jpeg" alt="topLeft" height="70%" border="6px" style="border-color:black">Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.
+<div class="popup" id = "pop">
+  <span class="popuptext" id="topLeft">
+    <button id = "x" onclick="topLeft()">
+            X
+        </button><img src="pictures/topLeft.jpeg" alt="topLeft" width="100%" border="6px" style="border-color:black"> <div class ="textbox">Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur. Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur. Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur. Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.</div>
 </span>
 </div>
 <map name="imagemap">
-  <area shape="rect" coords="0,0,100,100" onclick="myFunction()" alt="topCorner">
+  <area id = "TL" shape="rect" coords="0,0,100,100" onclick="topLeft()" alt="topCorner">
+</map>
 </map>
 
 
 <script>
-function myFunction() {
-  var popup = document.getElementById("myPopup");
+function topLeft() {
+  var popup = document.getElementById("topLeft");
     popup.classList.toggle("show");
+}
+
+// Make the DIV element draggable:
+dragElement(document.getElementById("pop"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    // if present, the header is where you move the DIV from:
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    // otherwise, move the DIV from anywhere inside the DIV: 
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
 }
 </script>
 </body>
