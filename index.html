@@ -1,177 +1,58 @@
 <html>
 <head>
-  <style>
-  .popup {
-  position: fixed;
-  left: 200px;
-  top: 775px;
-  height: 300px;
-  width: 450px;
-  display: inline-block;
-  cursor: pointer;
-  border-width: 0px;
-  border-color: #000;
-  box-shadow: 10px 10px 5px grey;
-}
-
-.textbox{
-  width: 450px;
-  height: 300px;
-  overflow: scroll;
-  border-radius: 0px;
-  border-style: solid;
-  border-color: black;
-  border-width: 0px;
-
-
-}
-body{
-  background-color: #383428;
-  background-image: linear-gradient(grey, black);
-}
-img
- {
-  border-width: 0px;
-}
-
-.bgImage{
-  border-width: 0px;
-  box-shadow: 10px 10px 5px grey;
-}
-
-
-td {
-  width: 33%;
-  height: 100%;
-}
-/* The actual popup (appears on top) */
-.popup .popuptext {
-  visibility: hidden;
-  width: 455px;
-  background-color: white;
-  color: #000;
-  text-align: center;
-  border-radius: 0px;
-  border-color: #000;
-  padding: 0px;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-}
-.leftsidebar {
-  text-align: center;
-  color: white;
-  font-size: 30px;
-  font-family: arial;
-}
-
-.rightsidebar {
-  text-align: center;
-  color: white;
-  font-size: 17px;
-  font-family: arial;
-  list-style-position: inside;
-}
-
-/* Toggle this class when clicking on the popup container (hide and show the popup) */
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 2s;
-  animation: fadeIn 2s;
-}
-.popup .hide {
-  -webkit-animation: fadeOut 2s;
-  animation: fadeOut 2s;
-}
-#x {
-    position: absolute;
-    float: right;
-    background: red;
-    color: white;
-    top: 0px;
-    right: -10px;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-@-webkit-keyframes fadeOut {
-  from {opacity: 1;}
-  to {opacity: 0;}
-}
-
-@keyframes fadeOut {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(0);
-  }
-}
-</style>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.imagemapster.js"></script>
 </head>
-<body>
 
-<table>
-<tr>
-  <td><p class="leftsidebar"> <strong>Contemplation With Life <br>A Discussion</p></strong></td>
-<td>
-<div align="center">
-<img id="Image1" src="Pictures/wholeImage.jpg" alt="wholeImage" height="667" class="bgImage" usemap="#imagemap">
-</td>
-<td class="rightsidebar"> 
-<div align="center">
-  <strong><h2 align="center">List </h2></strong> 
-  <ol>
-    <li> Personal Development Plan </li>
-    <li> Personal Best </li>
-    <li> The Box </li>
-    <li> Manifesto </li>
-    <li> C4 </li>
-    <li> The Boat</li>
-    <li> The Sculpture </li>
-    <li> The Musician </li>
-    <li> Branding</li>
-    <li> Obituary</li>
-    <li> Resume</li>
-    <li> Personal Vision</li>
-    <li> Bug List </li>
-    <li> Art Iterations </li>
-    <li> Prototyping </li>
-</ol>
-<strong><h2 align="center">Brainstorm </h2></strong> 
-  <ol>
-    <li> Empath Interviews </li>
-    <li> White Hat </li>
-    <li> Scamper/Fraction </li>
-    <li> Perspective </li>
-    <li> Mind Map </li>
-    <li> Word Dance </li>
-    <li> WIBNI </li>
-    <li> QBQ </li>
-</ol>
-</div>
-</td>
-</tr>
-</div>
-</table>
+<body>
+  <table>
+    <tr>
+      <td><p class="leftsidebar"> <strong>Contemplation With Life <br>A Discussion</p></strong></td>
+      <td>
+        <div align="center">
+        <img id="Image1" src="Pictures/wholeImage.jpg" alt="wholeImage" height="667" class="bgImage" usemap="#imagemap">
+      </td>
+      <td class="rightsidebar"> 
+        <div align="center">
+          <strong><h2 align="center">List</h2></strong> 
+          <ol>
+            <li> <a href="#yellowGuy">Personal Development Plan </a></li>
+            <li> <a href="#yellowBird">Personal Best </a></li>
+            <li> <a href="#Box">The Box </a></li>
+            <li> <a href="#necklace">Manifesto </a></li>
+            <li> <a href="#beach">C4 </a></li>
+            <li> <a href="#Ship">The Boat</a></li>
+            <li> <a href="#nakedGuy">The Sculpture </a></li>
+            <li> <a href="#guitarGuy">The Musician </a></li>
+            <li> <a href="#backflipGuy">Branding </a></li>
+            <li> <a href="#guyInHand">Obituary </a></li>
+            <li> <a href="#Tree">Resume </a></li>
+            <li> <a href="#face">Personal Vision </a></li>
+            <li> <a href="#beachTrash">Bug List </a></li>
+            <li> <a href="#painter">Art Iterations </a></li>
+            <li> <a href="#watchHand">Prototyping </a></li>
+          </ol>
+          <strong><h2 align="center">Brainstorm</h2></strong> 
+          <ol>
+            <li> <a href="#DJ">Empath Interviews </a></li>
+            <li> <a href="#ReaperFace">White Hat </a></li>
+            <li> <a href="#watch">Scamper/Fraction </a></li>
+            <li> <a href="#swimmer">Perspective </a></li>
+            <li> <a href="#">Mind Map </a></li>
+            <li> <a href="#">Word Dance </a></li>
+            <li> <a href="#women">WIBNI </a></li>
+            <li> <a href="#Mask">QBQ </a></li>
+          </ol>
+        </div>
+      </td>
+    </tr>
+  </div>
+  </table>
 <div class="popup" id = "pop">
   <span class="popuptext" id="topLeft">
     <button id = "x" onclick="topLeft()"> X </button>
-        <img src="Pictures/topLeft.jpeg" alt="topLeft" width="100%" border="6px" style="border-color:black" onlick="closeWindow(event)"> <div class ="textbox">Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur. Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur. Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur. Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.</div>
+        <img src="Pictures/topLeft.jpeg" alt="topLeft" width="100%" border="6px" style="border-color:black" onlick="closeWindow()"> <div class ="textbox">Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur. Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur. Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur. Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.Lorem ipsum dolor sit amet, est elitr delectus ea. Sententiae reprimique ius eu. Novum bonorum vis id, ut minim diceret sit. Mea audire utamur discere cu, mel ne ullum solet. Sed ea malis commodo, mea in menandri honestatis suscipiantur.</div>
 </span>
 </div>
 <map name="imagemap">
@@ -209,7 +90,7 @@ td {
 //var $ = function(id) {return document.getElementById(id);}
 function closeWindow(e){
   alert(e.target.id);
-  var popup = document.getElementById(e.target.id)
+  var popup = document.getElementById("topLeft");
   popup.classList.toggle("hide");
 }
 
